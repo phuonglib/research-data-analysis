@@ -1,0 +1,33 @@
+N = 263; R2 = 0.315
+Tolerance and VIF:
+  CONF  tolerance = 0.613   VIF = 1.632
+  PV    tolerance = 0.642   VIF = 1.558
+  SAT   tolerance = 0.598   VIF = 1.671
+  TRU   tolerance = 0.885   VIF = 1.130
+RESET (squared predicted value): <F test: F=1.2415155008810392, p=0.2662201176570969, df_denom=257, df_num=1>
+Breusch-Pagan (Koenker): LM = 6.68, p = 0.154; F = 1.68, p = 0.155
+Durbin-Watson = 1.877
+Shapiro-Wilk: W = 0.965, p = 4.70e-06; skewness = -0.81
+Largest Cook's distance = 0.066 (response 139); responses with Cook > 4/N: 12
+Largest leverage = 0.069; responses above 2(k+1)/N: 19
+Responses with |studentized residual| > 3: 2
+
+OLS and HC3 standard errors:
+  Intercept  OLS 0.267   HC3 0.288   p(HC3) = 0.0006
+  CONF       OLS 0.063   HC3 0.056   p(HC3) = 0.1180
+  PV         OLS 0.059   HC3 0.062   p(HC3) = 0.0039
+  SAT        OLS 0.064   HC3 0.064   p(HC3) = 0.0011
+  TRU        OLS 0.050   HC3 0.046   p(HC3) = 0.0000
+
+95% confidence intervals: OLS and bootstrap (5,000 resamples)
+  Intercept  OLS [0.474; 1.524]   bootstrap [0.448; 1.573]
+  CONF       OLS [-0.037; 0.211]   bootstrap [-0.022; 0.190]
+  PV         OLS [0.062; 0.296]   bootstrap [0.059; 0.296]
+  SAT        OLS [0.084; 0.335]   bootstrap [0.091; 0.339]
+  TRU        OLS [0.159; 0.356]   bootstrap [0.166; 0.347]
+
+Sensitivity: N = 251, R2 = 0.358 (full: 0.315)
+  CONF  beta 0.091 p 0.168   |   beta 0.113 p 0.0785
+  PV    beta 0.194 p 0.003   |   beta 0.244 p 0.0002
+  SAT   beta 0.219 p 0.001   |   beta 0.154 p 0.0189
+  TRU   beta 0.281 p 0.000   |   beta 0.338 p 0.0000

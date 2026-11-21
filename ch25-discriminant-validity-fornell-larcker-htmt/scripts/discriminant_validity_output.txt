@@ -1,0 +1,68 @@
+This is lavaan 0.7-3
+lavaan is FREE software! Please report any bugs.
+ 
+###############################################################################
+This is semTools 0.5-10
+All users of R (or SEM) are invited to submit functions or ideas for functions.
+###############################################################################
+        construct    AVE sqrt_AVE
+CONFIRM   CONFIRM 0.5383   0.7337
+VALUE       VALUE 0.5534   0.7439
+SATISF     SATISF 0.5748   0.7582
+TRUST       TRUST 0.5476   0.7400
+INTENT     INTENT 0.4774   0.6910
+Fornell-Larcker matrix (diagonal = square root of AVE):
+        CONFIRM VALUE SATISF TRUST INTENT
+CONFIRM   0.734 0.584  0.632 0.397  0.506
+VALUE     0.584 0.744  0.638 0.132  0.482
+SATISF    0.632 0.638  0.758 0.282  0.528
+TRUST     0.397 0.132  0.282 0.740  0.471
+INTENT    0.506 0.482  0.528 0.471  0.691
+HTMT:
+        CONFIR VALUE SATISF TRUST INTENT
+CONFIRM  1.000                          
+VALUE    0.595 1.000                    
+SATISF   0.648 0.653  1.000             
+TRUST    0.394 0.143  0.279 1.000       
+INTENT   0.488 0.486  0.530 0.472  1.000
+HTMT2 (geometric mean):
+        CONFIR VALUE SATISF TRUST INTENT
+CONFIRM  1.000                          
+VALUE    0.591 1.000                    
+SATISF   0.646 0.650  1.000             
+TRUST    0.387 0.127  0.273 1.000       
+INTENT   0.469 0.485  0.526 0.467  1.000
+               pair  htmt    low    up
+1   VALUE - CONFIRM 0.595 0.4833 0.701
+2  SATISF - CONFIRM 0.648 0.5448 0.733
+3   TRUST - CONFIRM 0.394 0.2427 0.534
+4  INTENT - CONFIRM 0.488 0.3636 0.607
+5    SATISF - VALUE 0.653 0.5530 0.745
+6     TRUST - VALUE 0.143 0.0675 0.314
+7    INTENT - VALUE 0.486 0.3541 0.621
+8    TRUST - SATISF 0.279 0.1395 0.424
+9   INTENT - SATISF 0.530 0.4132 0.631
+10   INTENT - TRUST 0.472 0.3404 0.597
+Warning message:
+lavaan->lav_object_post_check():  
+   covariance matrix of latent variables is not positive definite; use 
+   lavInspect(fit, "cov.lv") to investigate. 
+
+Chi-Squared Difference Test
+
+    Df   AIC   BIC  Chisq Chisq diff Df diff Pr(>Chisq)    
+f0 160 12507 12758 134.29                                  
+f1 161 12668 12915 296.98     162.68       1  < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+       lhs    rhs est.std ci.lower ci.upper
+46 CONFIRM  VALUE   0.584    0.480    0.689
+47 CONFIRM SATISF   0.632    0.534    0.729
+48 CONFIRM  TRUST   0.397    0.271    0.524
+49 CONFIRM INTENT   0.506    0.385    0.626
+50   VALUE SATISF   0.638    0.543    0.733
+51   VALUE  TRUST   0.132   -0.009    0.273
+52   VALUE INTENT   0.482    0.362    0.603
+53  SATISF  TRUST   0.282    0.149    0.416
+54  SATISF INTENT   0.528    0.413    0.643
+55   TRUST INTENT   0.471    0.348    0.594

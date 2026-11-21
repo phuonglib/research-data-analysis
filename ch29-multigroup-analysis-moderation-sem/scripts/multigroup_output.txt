@@ -1,0 +1,122 @@
+This is lavaan 0.7-3
+lavaan is FREE software! Please report any bugs.
+Group sizes (FIML):
+Female   Male 
+   137    125 
+Group sizes (complete cases):
+Female   Male 
+   131    119 
+
+================== FIML (as JASP) ==================
+                                    chisq  df pvalue   cfi   tli rmsea  srmr
+M1 Configural                     346.966 324  0.182 0.989 0.987 0.023 0.053
+M2 Metric (loadings)              371.133 339  0.111 0.985 0.983 0.027 0.063
+M3 Scalar (loadings + intercepts) 381.298 354  0.153 0.987 0.986 0.024 0.064
+M4 Structural (loadings + paths)  377.624 346  0.117 0.985 0.984 0.026 0.068
+          dchisq ddf      p    dCFI  dRMSEA  dSRMR
+M2 vs M1 24.1673  15 0.0623 -0.0043  0.0036 0.0102
+M3 vs M2 10.1647  15 0.8093  0.0023 -0.0026 0.0006
+M4 vs M2  6.4905   7 0.4838  0.0002 -0.0005 0.0048
+                H           path B_male se_male beta_male   p_male B_female
+VALUE~CONFIRM  H1  VALUE~CONFIRM  0.642   0.117     0.579 4.06e-08   0.6079
+SATISF~CONFIRM H2 SATISF~CONFIRM  0.371   0.115     0.350 1.28e-03   0.4782
+SATISF~VALUE   H3   SATISF~VALUE  0.478   0.105     0.500 4.82e-06   0.2780
+INTENT~CONFIRM H4 INTENT~CONFIRM  0.138   0.142     0.153 3.30e-01   0.0192
+INTENT~VALUE   H5   INTENT~VALUE  0.110   0.123     0.135 3.71e-01   0.3243
+INTENT~SATISF  H6  INTENT~SATISF  0.199   0.138     0.233 1.49e-01   0.2490
+INTENT~TRUST   H7   INTENT~TRUST  0.259   0.110     0.277 1.86e-02   0.3914
+               se_female beta_female p_female cr_diff dchisq ddf     p
+VALUE~CONFIRM     0.1130      0.5650 7.47e-08  -0.235 0.0554   1 0.814
+SATISF~CONFIRM    0.1196      0.4729 6.43e-05   0.672 0.4513   1 0.502
+SATISF~VALUE      0.1071      0.2958 9.43e-03  -1.389 1.9389   1 0.164
+INTENT~CONFIRM    0.1453      0.0185 8.95e-01  -0.589 0.3464   1 0.556
+INTENT~VALUE      0.1166      0.3363 5.40e-03   1.279 1.6464   1 0.199
+INTENT~SATISF     0.1350      0.2427 6.52e-02   0.261 0.0684   1 0.794
+INTENT~TRUST      0.0907      0.4229 1.60e-05   0.962 0.9290   1 0.335
+Group 1 = Male 
+        Male Female
+VALUE  0.335  0.319
+SATISF 0.575  0.469
+INTENT 0.394  0.553
+
+univariate score tests:
+
+     lhs op    rhs   X2 df p.value
+4   .p6. ==  .p84. 5.34  1   0.021
+20 .p25. == .p103. 3.27  1   0.071
+2   .p3. ==  .p81. 3.15  1   0.076
+8  .p11. ==  .p89. 2.26  1   0.133
+5   .p7. ==  .p85. 2.07  1   0.150
+21 .p26. == .p104. 1.97  1   0.160
+14 .p19. ==  .p97. 1.93  1   0.165
+
+================== Complete cases (as AMOS) ==================
+                                    chisq  df pvalue   cfi   tli rmsea  srmr
+M1 Configural                     353.790 324  0.123 0.986 0.983 0.027 0.055
+M2 Metric (loadings)              377.611 339  0.073 0.981 0.979 0.030 0.065
+M3 Scalar (loadings + intercepts) 389.658 354  0.093 0.983 0.982 0.028 0.066
+M4 Structural (loadings + paths)  384.744 346  0.074 0.981 0.979 0.030 0.071
+          dchisq ddf      p    dCFI  dRMSEA  dSRMR
+M2 vs M1 23.8208  15 0.0682 -0.0043  0.0031 0.0103
+M3 vs M2 12.0473  15 0.6754  0.0014 -0.0018 0.0007
+M4 vs M2  7.1333   7 0.4151 -0.0001 -0.0003 0.0054
+                H           path B_male se_male beta_male   p_male B_female
+VALUE~CONFIRM  H1  VALUE~CONFIRM  0.647   0.117     0.589 2.86e-08   0.5989
+SATISF~CONFIRM H2 SATISF~CONFIRM  0.344   0.116     0.324 3.09e-03   0.4801
+SATISF~VALUE   H3   SATISF~VALUE  0.500   0.109     0.517 4.81e-06   0.2856
+INTENT~CONFIRM H4 INTENT~CONFIRM  0.130   0.141     0.143 3.55e-01   0.0156
+INTENT~VALUE   H5   INTENT~VALUE  0.110   0.129     0.133 3.92e-01   0.3096
+INTENT~SATISF  H6  INTENT~SATISF  0.202   0.140     0.236 1.50e-01   0.2829
+INTENT~TRUST   H7   INTENT~TRUST  0.260   0.112     0.272 2.06e-02   0.4160
+               se_female beta_female p_female cr_diff dchisq ddf     p
+VALUE~CONFIRM     0.1143       0.559 1.62e-07  -0.332  0.110   1 0.741
+SATISF~CONFIRM    0.1201       0.475 6.38e-05   0.844  0.700   1 0.403
+SATISF~VALUE      0.1062       0.303 7.17e-03  -1.458  2.119   1 0.146
+INTENT~CONFIRM    0.1424       0.015 9.13e-01  -0.573  0.312   1 0.576
+INTENT~VALUE      0.1158       0.318 7.52e-03   1.159  1.311   1 0.252
+INTENT~SATISF     0.1371       0.274 3.91e-02   0.415  0.169   1 0.681
+INTENT~TRUST      0.0942       0.430 1.01e-05   1.102  1.177   1 0.278
+Group 1 = Male 
+        Male Female
+VALUE  0.347  0.312
+SATISF 0.569  0.478
+INTENT 0.378  0.563
+
+univariate score tests:
+
+     lhs op    rhs   X2 df p.value
+4   .p6. ==  .p84. 5.21  1   0.022
+20 .p25. == .p103. 3.37  1   0.067
+2   .p3. ==  .p81. 3.11  1   0.078
+21 .p26. == .p104. 2.53  1   0.112
+5   .p7. ==  .p85. 2.22  1   0.136
+14 .p19. ==  .p97. 2.17  1   0.140
+8  .p11. ==  .p89. 2.08  1   0.149
+
+Latent means of group 2 (Female) relative to group 1 (Male), FIML, M3:
+        lhs    est    se      z pvalue
+152 CONFIRM -0.070 0.093 -0.754  0.451
+153   VALUE  0.105 0.090  1.169  0.242
+154  SATISF  0.042 0.077  0.553  0.580
+155   TRUST -0.040 0.097 -0.410  0.682
+156  INTENT -0.009 0.080 -0.116  0.907
+
+Score test on M2 (metric invariance):
+        parameter   X2 df p.value
+4      VALUE=~PV2 5.78  1   0.016
+2  CONFIRM=~CONF3 3.12  1   0.077
+15    INTENT=~RI4 2.86  1   0.091
+5      VALUE=~PV3 2.08  1   0.150
+9    SATISF=~SAT4 1.94  1   0.164
+
+M5 (scalar + paths), fiml :
+   chisq       df   pvalue      cfi      tli    rmsea     srmr   dchisq 
+387.7748 361.0000   0.1593   0.9873   0.9867   0.0238   0.0688   6.4767 
+     ddf        p 
+  7.0000   0.4853 
+
+M5 (scalar + paths), complete :
+   chisq       df   pvalue      cfi      tli    rmsea     srmr   dchisq 
+396.7724 361.0000   0.0944   0.9827   0.9818   0.0282   0.0714   7.1142 
+     ddf        p 
+  7.0000   0.4171 

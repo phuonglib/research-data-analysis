@@ -1,0 +1,132 @@
+This is lavaan 0.7-3
+lavaan is FREE software! Please report any bugs.
+Respondents missing at least one SAT item: 4 
+lavaan 0.7-3 ended normally after 30 iterations
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        12
+
+  Number of observations                           267
+  Number of missing patterns                         5
+
+Model Test User Model:
+                                                      
+  Test statistic                                 0.587
+  Degrees of freedom                                 2
+  P-value (Chi-square)                           0.746
+                                                      
+  Browne's residual (NT model-based) test             
+  Test statistic                                 0.315
+  Degrees of freedom                                 2
+  P-value (Chi-square)                           0.854
+
+Model Test Baseline Model:
+
+  Test statistic                               416.832
+  Degrees of freedom                                 6
+  P-value                                        0.000
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    1.000
+  Tucker-Lewis Index (TLI)                       1.010
+                                                      
+  Robust Comparative Fit Index (CFI)             1.000
+  Robust Tucker-Lewis Index (TLI)                1.010
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)              -1216.344
+  Loglikelihood unrestricted model (H1)      -1216.050
+                                                      
+  Akaike (AIC)                                2456.687
+  Bayesian (BIC)                              2499.734
+  Sample-size adjusted Bayesian (SABIC)       2461.687
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.000
+  90 Percent confidence interval - lower         0.000
+  90 Percent confidence interval - upper         0.084
+  P-value H_0: RMSEA <= 0.050                    0.857
+  P-value H_0: RMSEA >= 0.080                    0.058
+                                                      
+  Robust RMSEA                                   0.000
+  90 Percent confidence interval - lower         0.000
+  90 Percent confidence interval - upper         0.084
+  P-value H_0: Robust RMSEA <= 0.050             0.856
+  P-value H_0: Robust RMSEA >= 0.080             0.059
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.005
+
+Goodness of Fit Index:
+
+  Goodness of Fit Index (GFI)                    1.000
+  90 Percent confidence interval - lower         0.993
+  90 Percent confidence interval - upper         1.000
+                                                      
+  Robust GFI                                     1.000
+  90 Percent confidence interval - lower         0.993
+  90 Percent confidence interval - upper         1.000
+
+Parameter Estimates:
+
+  Standard errors                             Standard
+  Information                                 Observed
+  Observed information based on                Hessian
+
+Latent Variables:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+  SATISF =~                                                             
+    SAT1              1.000                               0.724    0.789
+    SAT2              0.894    0.082   10.966    0.000    0.647    0.705
+    SAT3              0.937    0.081   11.495    0.000    0.678    0.723
+    SAT4              1.040    0.083   12.531    0.000    0.753    0.811
+
+Intercepts:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+   .SAT1              3.880    0.056   68.991    0.000    3.880    4.230
+   .SAT2              3.881    0.056   68.879    0.000    3.881    4.225
+   .SAT3              3.906    0.057   68.087    0.000    3.906    4.167
+   .SAT4              3.883    0.057   68.323    0.000    3.883    4.185
+
+Variances:
+                   Estimate  Std.Err  z-value  P(>|z|)   Std.lv  Std.all
+   .SAT1              0.317    0.040    7.901    0.000    0.317    0.377
+   .SAT2              0.425    0.045    9.417    0.000    0.425    0.503
+   .SAT3              0.419    0.046    9.184    0.000    0.419    0.477
+   .SAT4              0.294    0.040    7.333    0.000    0.294    0.342
+    SATISF            0.524    0.074    7.080    0.000    1.000    1.000
+
+R-Square:
+                   Estimate
+    SAT1              0.623
+    SAT2              0.497
+    SAT3              0.523
+    SAT4              0.658
+
+
+Degrees of freedom: moments = 10 (without means); free parameters (without means) = 8
+     lhs op    rhs   est    se     z pvalue std.all
+1 SATISF =~   SAT1 1.000 0.000    NA     NA   0.789
+2 SATISF =~   SAT2 0.894 0.082 10.97      0   0.705
+3 SATISF =~   SAT3 0.937 0.081 11.49      0   0.723
+4 SATISF =~   SAT4 1.040 0.083 12.53      0   0.811
+5   SAT1 ~~   SAT1 0.317 0.040  7.90      0   0.377
+6   SAT2 ~~   SAT2 0.425 0.045  9.42      0   0.503
+7   SAT3 ~~   SAT3 0.419 0.046  9.18      0   0.477
+8   SAT4 ~~   SAT4 0.294 0.040  7.33      0   0.342
+9 SATISF ~~ SATISF 0.524 0.074  7.08      0   1.000
+         chisq             df         pvalue            cfi            tli 
+         0.587          2.000          0.746          1.000          1.010 
+         rmsea rmsea.ci.lower rmsea.ci.upper           srmr           npar 
+         0.000          0.000          0.084          0.005         12.000 
+      lhs  est
+10   SAT1 3.88
+11   SAT2 3.88
+12   SAT3 3.91
+13   SAT4 3.88
+14 SATISF 0.00

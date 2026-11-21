@@ -1,0 +1,78 @@
+cSEM 0.7.1  lavaan 0.7.3 
+N = 254 
+________________________________________________________________________________
+
+Verify admissibility:
+
+	 admissible
+
+Details:
+
+  Code   Status    Description
+  1      ok        Convergence achieved                                   
+  2      ok        All absolute standardized loading estimates <= 1       
+  3      ok        Construct VCV is positive semi-definite                
+  4      ok        All reliability estimates <= 1                         
+  5      ok        Model-implied indicator VCV is positive semi-definite  
+________________________________________________________________________________
+   H             path regression   PLS   PLSc CB_SEM
+1 H1  VALUE ~ CONFIRM     0.4965 0.501 0.5988 0.5794
+2 H2 SATISF ~ CONFIRM     0.3469 0.345 0.3789 0.3889
+3 H3   SATISF ~ VALUE     0.3802 0.383 0.4341 0.4240
+4 H4 INTENT ~ CONFIRM     0.0854 0.101 0.0622 0.0773
+5 H5   INTENT ~ VALUE     0.1907 0.185 0.2258 0.2150
+6 H6  INTENT ~ SATISF     0.2247 0.221 0.2566 0.2599
+7 H7   INTENT ~ TRUST     0.2792 0.280 0.3478 0.3376
+  construct regression   PLS  PLSc CB_SEM
+1     VALUE      0.246 0.251 0.359  0.336
+2    SATISF      0.396 0.399 0.529  0.522
+3    INTENT      0.311 0.318 0.441  0.444
+               name   PLS  PLSc CB_SEM
+1  CONFIRM =~ CONF1 0.803 0.741  0.722
+2  CONFIRM =~ CONF2 0.831 0.765  0.756
+3  CONFIRM =~ CONF3 0.754 0.596  0.668
+4  CONFIRM =~ CONF4 0.848 0.831  0.796
+5      VALUE =~ PV1 0.814 0.742  0.742
+6      VALUE =~ PV2 0.801 0.679  0.723
+7      VALUE =~ PV3 0.876 0.817  0.851
+8      VALUE =~ PV4 0.769 0.736  0.667
+9    SATISF =~ SAT1 0.842 0.770  0.782
+10   SATISF =~ SAT2 0.797 0.723  0.718
+11   SATISF =~ SAT3 0.806 0.748  0.731
+12   SATISF =~ SAT4 0.857 0.795  0.808
+13    TRUST =~ TRU1 0.818 0.785  0.732
+14    TRUST =~ TRU2 0.846 0.773  0.800
+15    TRUST =~ TRU3 0.777 0.631  0.710
+16   TRUST =~ TRU4R 0.817 0.776  0.732
+17    INTENT =~ RI1 0.805 0.695  0.737
+18    INTENT =~ RI2 0.783 0.712  0.696
+19    INTENT =~ RI3 0.761 0.614  0.674
+20    INTENT =~ RI4 0.778 0.749  0.679
+Mean loading: PLS 0.809  PLSc 0.734  CB-SEM 0.736 
+CB-SEM fit:  chisq      df     cfi   rmsea    srmr 
+141.549 162.000   1.000   0.000   0.038 
+SRMR PLS: 0.057  SRMR PLSc: 0.037 
+              Name Estimate Std_err t_stat  p_value
+1  VALUE ~ CONFIRM    0.501  0.0519   9.65 4.90e-22
+2 SATISF ~ CONFIRM    0.345  0.0587   5.89 3.89e-09
+3   SATISF ~ VALUE    0.383  0.0595   6.44 1.18e-10
+4 INTENT ~ CONFIRM    0.101  0.0587   1.72 8.60e-02
+5   INTENT ~ TRUST    0.280  0.0501   5.60 2.19e-08
+6   INTENT ~ VALUE    0.185  0.0693   2.68 7.47e-03
+7  INTENT ~ SATISF    0.221  0.0636   3.47 5.27e-04
+   H             path regression   PLS   PLSc CB_SEM PLS_se    PLS_p PLS_low
+1 H1  VALUE ~ CONFIRM     0.4965 0.501 0.5988 0.5794 0.0519 4.90e-22  0.3955
+2 H2 SATISF ~ CONFIRM     0.3469 0.345 0.3789 0.3889 0.0587 3.89e-09  0.2321
+3 H3   SATISF ~ VALUE     0.3802 0.383 0.4341 0.4240 0.0595 1.18e-10  0.2660
+4 H4 INTENT ~ CONFIRM     0.0854 0.101 0.0622 0.0773 0.0587 8.60e-02 -0.0174
+5 H5   INTENT ~ VALUE     0.1907 0.185 0.2258 0.2150 0.0693 7.47e-03  0.0517
+6 H6  INTENT ~ SATISF     0.2247 0.221 0.2566 0.2599 0.0636 5.27e-04  0.0930
+7 H7   INTENT ~ TRUST     0.2792 0.280 0.3478 0.3376 0.0501 2.19e-08  0.1878
+  PLS_up     CB_p
+1  0.598 1.17e-12
+2  0.460 2.50e-06
+3  0.496 2.71e-07
+4  0.210 4.43e-01
+5  0.323 2.67e-02
+6  0.347 1.33e-02
+7  0.383 8.77e-06

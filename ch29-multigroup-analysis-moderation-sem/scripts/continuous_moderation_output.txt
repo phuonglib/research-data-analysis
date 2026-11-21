@@ -1,0 +1,53 @@
+This is lavaan 0.7-3
+lavaan is FREE software! Please report any bugs.
+ 
+###############################################################################
+This is semTools 0.5-10
+All users of R (or SEM) are invited to submit functions or ideas for functions.
+###############################################################################
+Largest difference from indProd: 4.440892e-16 
+  chisq      df  pvalue     cfi     tli   rmsea    srmr 
+229.496 241.000   0.692   1.000   1.006   0.000   0.041 
+       rhs label    est    se      z pvalue ci.lower ci.upper std.all
+28 CONFIRM        0.081 0.100  0.811  0.418   -0.115    0.277   0.084
+29   VALUE        0.207 0.085  2.423  0.015    0.040    0.374   0.231
+30  SATISF    h6  0.215 0.095  2.255  0.024    0.028    0.402   0.229
+31   TRUST    h7  0.307 0.073  4.212  0.000    0.164    0.449   0.327
+32 SATxTRU    h8 -0.041 0.082 -0.502  0.615   -0.202    0.119  -0.038
+R2 INTENT (with interaction): 0.445 
+R2 INTENT (h8 = 0): 0.444  f2 = 3e-04 
+
+Chi-Squared Difference Test
+
+    Df   AIC   BIC  Chisq Chisq diff Df diff Pr(>Chisq)
+f  241 15279 15577 229.50                              
+f0 242 15277 15572 229.75    0.25581       1      0.613
+Variance of TRUST (vTRU): 0.5158 
+     level   TRUST  slope     se      z      p
+[1,]    -1 -0.7182 0.2446 0.1154 2.1200 0.0340
+[2,]     0  0.0000 0.2151 0.0954 2.2551 0.0241
+[3,]     1  0.7182 0.1855 0.1086 1.7080 0.0876
+Median of TRU: 4 
+
+High  Low 
+ 116  151 
+   group   est    se pvalue
+22     1 0.279 0.133  0.035
+84     2 0.205 0.172  0.234
+
+Chi-Squared Difference Test
+
+    Df    AIC   BIC  Chisq Chisq diff Df diff Pr(>Chisq)
+g1 208 9939.3 10284 216.37                              
+g0 209 9937.5 10278 216.49    0.11651       1     0.7329
+Largest difference from PSPP: 4.440892e-16 
+
+Complete cases: N = 254 
+  chisq      df  pvalue     cfi     tli   rmsea    srmr 
+238.112 241.000   0.540   1.000   1.001   0.000   0.044 
+       rhs    est    se      z pvalue std.all
+28 CONFIRM  0.066 0.099  0.664  0.507   0.068
+29   VALUE  0.192 0.088  2.191  0.028   0.212
+30  SATISF  0.250 0.099  2.517  0.012   0.263
+31   TRUST  0.315 0.076  4.175  0.000   0.325
+32 SATxTRU -0.055 0.082 -0.668  0.504  -0.050

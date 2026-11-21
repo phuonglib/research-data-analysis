@@ -1,0 +1,31 @@
+Number of items p = 20
+
+1) EFA (Hair et al., 2019)
+   Ratio 5:1  -> 100
+   Ratio 10:1 -> 200
+
+2) Multiple regression with m = 3 predictors
+   Green (1991): 50 + 8m = 74;  104 + m = 107
+   Power analysis, f2 = 0.02 (small): N = 550
+   Power analysis, f2 = 0.15 (medium): N = 77
+   Power analysis, f2 = 0.35 (large): N = 36
+
+3) PLS-SEM, inverse square root method
+   p_min = 0.10 -> N = 619
+   p_min = 0.15 -> N = 275
+   p_min = 0.20 -> N = 155
+   p_min = 0.25 -> N = 99
+   p_min = 0.30 -> N = 69
+   Smallest detectable path with N = 250: 0.157
+
+4) CB-SEM (CFA with 5 constructs): free parameters q = 50, df = 160
+   Ratio N:q 10:1 -> 500;  20:1 -> 1000
+   RMSEA power (0.05 vs 0.08): N = 97
+
+5) Estimating a proportion (descriptive)
+   Cochran (p = 0.5, e = 5%): 385
+   Yamane with N = 500: 223
+   Yamane with N = 2000: 334
+   Yamane with N = 100000: 399
+
+6) Questionnaires to distribute: target 250 valid, 15% allowance -> 294.1, rounded up to 295

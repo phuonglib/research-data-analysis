@@ -1,0 +1,11 @@
+No data file is included in this folder.
+
+Post 36 uses the sample project "Example - Corporate reputation (primer)" that ships with SmartPLS 4
+(344 respondents, file "Complete data.txt"). The data belong to SmartPLS GmbH and are not redistributed here.
+
+To reproduce the results:
+1. Open the sample project from the welcome screen of SmartPLS 4 (Post 32, Section 4).
+   SmartPLS copies it into your workspace folder.
+2. Run scripts/evaluate_formative.R. It reads
+   ~/smartpls4_workspace/Example - Corporate reputation (primer)/Complete data.txt
+   (change `path` in the script if your workspace is elsewhere).

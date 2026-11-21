@@ -1,0 +1,81 @@
+This is lavaan 0.7-3
+lavaan is FREE software! Please report any bugs.
+N = 254. Mardia (multivariate kurtosis) = 17.207, c.r. = 4.622
+  item min max   skew cr_skew kurtosis cr_kurt
+ CONF1   1   5 -0.852  -5.545    0.444   1.446
+ CONF2   1   5 -0.742  -4.827    0.411   1.336
+ CONF3   1   5 -0.673  -4.380    0.015   0.049
+ CONF4   1   5 -0.661  -4.302    0.004   0.014
+   PV1   1   5 -0.630  -4.096   -0.438  -1.423
+   PV2   1   5 -0.785  -5.108    0.224   0.727
+   PV3   1   5 -0.993  -6.463    1.046   3.403
+   PV4   1   5 -0.744  -4.842    0.065   0.212
+  SAT1   1   5 -0.605  -3.936   -0.004  -0.012
+  SAT2   1   5 -0.755  -4.913    0.375   1.220
+  SAT3   1   5 -0.754  -4.905    0.294   0.956
+  SAT4   1   5 -0.625  -4.067   -0.042  -0.135
+  TRU1   1   5 -0.780  -5.078    0.064   0.207
+  TRU2   1   5 -0.797  -5.184    0.096   0.311
+  TRU3   1   5 -0.760  -4.943    0.069   0.225
+ TRU4R   1   5 -0.502  -3.266   -0.528  -1.718
+   RI1   1   5 -0.772  -5.021    0.391   1.271
+   RI2   1   5 -0.789  -5.131    0.482   1.569
+   RI3   1   5 -0.624  -4.057   -0.090  -0.293
+   RI4   1   5 -0.547  -3.562   -0.162  -0.527
+JASP-style (N - 1): kurtosis b2 = 453.61, z = 3.657; skewness b1 = 45.69, chi-square = 1934, df = 1540
+Five observations farthest from the centroid (ID, d2, p1):
+     ID    d2    p1
+101 112 43.53 0.002
+167 189 41.16 0.004
+75   82 39.96 0.005
+238 267 38.70 0.007
+122 135 38.65 0.007
+         chisq             df         pvalue            cfi            tli 
+       134.293        160.000          0.931          1.000          1.014 
+         rmsea rmsea.ci.lower rmsea.ci.upper           srmr 
+         0.000          0.000          0.008          0.032 
+     lhs   rhs   est    se     z pvalue std.all    r2
+ CONFIRM CONF1 1.000 0.000    NA     NA   0.722 0.522
+ CONFIRM CONF2 0.956 0.087 10.99      0   0.746 0.557
+ CONFIRM CONF3 0.902 0.092  9.80      0   0.667 0.444
+ CONFIRM CONF4 1.105 0.097 11.42      0   0.794 0.630
+   VALUE   PV1 1.000 0.000    NA     NA   0.741 0.549
+   VALUE   PV2 0.938 0.085 11.09      0   0.720 0.519
+   VALUE   PV3 1.061 0.083 12.75      0   0.849 0.720
+   VALUE   PV4 0.819 0.082  9.93      0   0.653 0.426
+  SATISF  SAT1 1.000 0.000    NA     NA   0.782 0.611
+  SATISF  SAT2 0.908 0.080 11.32      0   0.709 0.502
+  SATISF  SAT3 0.962 0.081 11.88      0   0.735 0.540
+  SATISF  SAT4 1.042 0.080 13.08      0   0.804 0.646
+   TRUST  TRU1 1.000 0.000    NA     NA   0.731 0.534
+   TRUST  TRU2 1.116 0.101 11.10      0   0.795 0.632
+   TRUST  TRU3 0.977 0.094 10.35      0   0.704 0.496
+   TRUST TRU4R 0.955 0.089 10.69      0   0.727 0.529
+  INTENT   RI1 1.000 0.000    NA     NA   0.730 0.532
+  INTENT   RI2 0.979 0.102  9.60      0   0.688 0.473
+  INTENT   RI3 0.961 0.101  9.53      0   0.668 0.446
+  INTENT   RI4 0.922 0.097  9.47      0   0.677 0.458
+     lhs    rhs   est pvalue std.all
+ CONFIRM  VALUE 0.304  0.000   0.584
+ CONFIRM SATISF 0.314  0.000   0.632
+ CONFIRM  TRUST 0.197  0.000   0.397
+ CONFIRM INTENT 0.234  0.000   0.506
+   VALUE SATISF 0.343  0.000   0.638
+   VALUE  TRUST 0.071  0.076   0.132
+   VALUE INTENT 0.242  0.000   0.482
+  SATISF  TRUST 0.145  0.000   0.282
+  SATISF INTENT 0.252  0.000   0.528
+   TRUST INTENT 0.225  0.000   0.471
+Negative variances (Heywood)? FALSE 
+Smallest standardized error variance: PV3 0.28 
+        lhs op   rhs   mi    epc sepc.all
+211   CONF3 ~~   RI1 6.12 -0.081   -0.184
+120  SATISF =~   PV4 6.00  0.254    0.193
+148  INTENT =~ CONF4 5.46  0.226    0.156
+96  CONFIRM =~   RI4 5.22  0.216    0.165
+130   TRUST =~ CONF2 5.02 -0.163   -0.132
+310    SAT3 ~~ TRU4R 4.39 -0.063   -0.154
+147  INTENT =~ CONF3 4.20 -0.204   -0.145
+Largest standardized residual (absolute): 2.82 
+Standardized residuals above 2.58: 1 of 190 
+Bollen-Stine: chi-square (N = 254) = 137.05, bootstrap p = 0.922 (2000 samples)

@@ -1,0 +1,44 @@
+This is lavaan 0.7-3
+lavaan is FREE software! Please report any bugs.
+N = 267  complete cases = 254 
+ hypothesis              path      B     SE    CR        p   B_low  B_up   beta
+         H1  CONFIRM -> VALUE 0.6266 0.0868 7.218 5.28e-13  0.4565 0.797 0.5772
+         H2 CONFIRM -> SATISF 0.4121 0.0846 4.872 1.10e-06  0.2463 0.578 0.3987
+         H3   VALUE -> SATISF 0.3886 0.0774 5.018 5.22e-07  0.2368 0.540 0.4082
+         H4 CONFIRM -> INTENT 0.0876 0.0987 0.887 3.75e-01 -0.1059 0.281 0.0906
+         H5   VALUE -> INTENT 0.2079 0.0852 2.441 1.47e-02  0.0410 0.375 0.2335
+         H6  SATISF -> INTENT 0.2119 0.0951 2.229 2.58e-02  0.0256 0.398 0.2265
+         H7   TRUST -> INTENT 0.3157 0.0709 4.456 8.34e-06  0.1769 0.455 0.3372
+ beta_low beta_up boot_low boot_up
+   0.4725   0.682   0.4492   0.794
+   0.2559   0.542   0.2268   0.591
+   0.2672   0.549   0.2382   0.572
+  -0.1084   0.290  -0.1176   0.262
+   0.0524   0.415   0.0060   0.385
+   0.0306   0.422   0.0536   0.456
+   0.2036   0.471   0.1963   0.472
+
+Comparison h7 - h6 (unstandardized):
+     est    se     z pvalue ci.lower ci.upper
+79 0.104 0.119 0.871  0.384    -0.13    0.337
+Standardized:
+   est.std    se    z pvalue ci.lower ci.upper
+79   0.111 0.126 0.88  0.379   -0.136    0.357
+$stat
+[1] 0.7579253
+
+$df
+[1] 1
+
+$p.value
+[1] 0.3839786
+
+$se
+[1] "standard"
+
+        r2_dropped     f2
+CONFIRM     0.4346 0.0156
+VALUE       0.4368 0.0117
+SATISF      0.4183 0.0448
+TRUST       0.3547 0.1590
+Full R2 of INTENT: 0.4433 

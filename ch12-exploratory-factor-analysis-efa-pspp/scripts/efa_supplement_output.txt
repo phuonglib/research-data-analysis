@@ -1,0 +1,25 @@
+N = 254; determinant = 1.42e-04; KMO = 0.900
+Item MSA: CONF1 0.92, CONF2 0.91, CONF3 0.91, CONF4 0.92, PV1 0.91, PV2 0.90, PV3 0.88, PV4 0.93, SAT1 0.91, SAT2 0.93, SAT3 0.92, SAT4 0.90, TRU1 0.89, TRU2 0.84, TRU3 0.85, TRU4R 0.84, RI1 0.86, RI2 0.90, RI3 0.88, RI4 0.93
+Lowest MSA: 0.841 (TRU2); highest: 0.933 (PV4)
+
+Parallel analysis based on PCA: keep 3 factors
+Factor  Eigenvalue  Random (95th pct)
+     1       6.773              1.634
+     2       2.572              1.503
+     3       1.554              1.415
+     4       1.197              1.344
+     5       1.165              1.279
+     6       0.627              1.228
+     7       0.606              1.174
+     8       0.555              1.125
+
+Parallel analysis based on PAF: keep 5 factors
+Factor  Eigenvalue  Random (95th pct)
+     1       6.258              0.731
+     2       2.051              0.594
+     3       0.995              0.504
+     4       0.709              0.431
+     5       0.638              0.361
+     6       0.078              0.308
+     7       0.057              0.253
+     8       0.040              0.200

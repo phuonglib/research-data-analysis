@@ -1,0 +1,14 @@
+1. Independent samples (Male = 1, Female = 2)
+  RI: n = 125/135, mean = 3.865/3.868, SD = 0.72/0.73, Levene F = 0.14 p = 0.707; Student t = -0.03 p = 0.977; Welch t = -0.03 df = 257.30 p = 0.977; diff = -0.003; d = -0.004; Mann-Whitney U = 8401.5 p = 0.953
+  SAT: n = 125/137, mean = 3.881/3.906, SD = 0.82/0.71, Levene F = 3.24 p = 0.073; Student t = -0.26 p = 0.797; Welch t = -0.26 df = 245.58 p = 0.798; diff = -0.024; d = -0.032; Mann-Whitney U = 8603.5 p = 0.947
+  FREQ: n = 125/137, mean = 4.984/4.358, SD = 8.55/3.11, Levene F = 0.41 p = 0.523; Student t = 0.80 p = 0.424; Welch t = 0.77 df = 153.72 p = 0.440; diff = 0.626; d = 0.099; Mann-Whitney U = 8828.0 p = 0.663
+  FREQ without response ID 99: SD = 2.69/3.11, Welch p = 0.782
+  TOST RI (bounds +/-0.2): 90% CI [-0.151; 0.146], p (lower) = 0.015, p (upper) = 0.013
+2. Paired samples PV2 - PV3
+  N = 267, mean diff = -0.082, SD = 0.841, t = -1.60, p = 0.111, CI [-0.184; 0.019], r = 0.617, d_z = -0.098
+  Wilcoxon: negative = 77, positive = 56, ties = 134, p = 0.119
+3. One sample
+  SAT against 3: mean = 3.894, t(265) = 19.21, p = 0.0000, diff = 0.894 [0.802; 0.985], d = 1.178
+  RI against 3: mean = 3.862, t(264) = 19.24, p = 0.0000, diff = 0.862 [0.773; 0.950], d = 1.182
+  SAT against 4: mean = 3.894, t(265) = -2.28, p = 0.0233, diff = -0.106 [-0.198; -0.015], d = -0.140
+  RI against 4: mean = 3.862, t(264) = -3.09, p = 0.0022, diff = -0.138 [-0.227; -0.050], d = -0.190

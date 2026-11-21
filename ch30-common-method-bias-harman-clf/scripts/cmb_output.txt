@@ -1,0 +1,167 @@
+This is lavaan 0.7-3
+lavaan is FREE software! Please report any bugs.
+Complete cases N = 254 
+Eigenvalues (PCA): 6.773 2.572 1.554 1.197 1.165 0.627 
+% variance of factor 1 (PCA): 33.87 
+Number of eigenvalues > 1: 5 
+Cumulative % of 5 components: 66.31 
+% variance of 1 factor (PAF, after 4 iterations): 30.58 
+CLF with free loadings converged? FALSE 
+                                   chisq  df pvalue   cfi   tli rmsea  srmr
+1 factor (Harman CFA)            935.057 170  0.000 0.638 0.595  0.13 0.109
+5 factors (Post 22)              134.293 160  0.931 1.000 1.014  0.00 0.032
+5 factors + CLF (equal loadings) 134.190 159  0.924 1.000 1.014  0.00 0.033
+
+Chi-Squared Difference Test
+
+    Df   AIC   BIC  Chisq Chisq diff Df diff Pr(>Chisq)    
+f5 160 12507 12758 134.29                                  
+f1 170 13288 13503 935.06     800.76      10  < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Chi-Squared Difference Test
+
+    Df   AIC   BIC  Chisq Chisq diff Df diff Pr(>Chisq)
+fc 159 12509 12764 134.19                              
+f5 160 12507 12758 134.29    0.10242       1     0.7489
+Parameters per model (JASP tab names):
+                        M1_five_factors M2_one_factor   M3_CLF
+free                              70.00         60.00    71.00
+rows_in_parameter_table           80.00         62.00   126.00
+fixed_rows                        10.00          2.00    36.00
+log_likelihood                 -6183.62      -6584.01 -6183.57
+AIC                            12507.25      13288.01 12509.14
+BIC                            12758.35      13503.25 12763.84
+    item  factor loading_without_CLF loading_with_CLF loading_on_CLF p_CLF
+1  CONF1 CONFIRM               0.722            0.673          0.255 0.442
+2  CONF2 CONFIRM               0.746            0.696          0.274 0.436
+3  CONF3 CONFIRM               0.667            0.615          0.260 0.437
+4  CONF4 CONFIRM               0.794            0.747          0.255 0.447
+5    PV1   VALUE               0.741            0.698          0.242 0.441
+6    PV2   VALUE               0.720            0.678          0.249 0.435
+7    PV3   VALUE               0.849            0.814          0.260 0.437
+8    PV4   VALUE               0.653            0.595          0.260 0.441
+9   SAT1  SATISF               0.782            0.735          0.267 0.440
+10  SAT2  SATISF               0.709            0.654          0.267 0.440
+11  SAT3  SATISF               0.735            0.687          0.261 0.439
+12  SAT4  SATISF               0.804            0.759          0.264 0.442
+13  TRU1   TRUST               0.731            0.681          0.250 0.442
+14  TRU2   TRUST               0.795            0.761          0.242 0.438
+15  TRU3   TRUST               0.704            0.665          0.245 0.434
+16 TRU4R   TRUST               0.727            0.678          0.260 0.439
+17   RI1  INTENT               0.730            0.688          0.265 0.433
+18   RI2  INTENT               0.688            0.637          0.257 0.438
+19   RI3  INTENT               0.668            0.625          0.253 0.433
+20   RI4  INTENT               0.677            0.614          0.270 0.442
+   difference method_variance
+1      0.0494          0.0652
+2      0.0502          0.0753
+3      0.0516          0.0676
+4      0.0469          0.0650
+5      0.0432          0.0584
+6      0.0427          0.0620
+7      0.0351          0.0674
+8      0.0573          0.0677
+9      0.0472          0.0713
+10     0.0546          0.0712
+11     0.0476          0.0679
+12     0.0453          0.0698
+13     0.0492          0.0625
+14     0.0337          0.0587
+15     0.0396          0.0599
+16     0.0491          0.0674
+17     0.0414          0.0704
+18     0.0506          0.0661
+19     0.0431          0.0641
+20     0.0633          0.0728
+Unstandardized CLF loading m = 0.2443  SE = 0.3154  z = 0.775  p = 0.439  CI: -0.374 0.862 
+CLF variance fixed at 1. Mean % method variance: 6.65 %; range 5.84 7.53 
+Largest change in a loading: 0.063 
+Factor correlations without CLF:
+        CONFIR VALUE SATISF TRUST INTENT
+CONFIRM  1.000                          
+VALUE    0.584 1.000                    
+SATISF   0.632 0.638  1.000             
+TRUST    0.397 0.132  0.282 1.000       
+INTENT   0.506 0.482  0.528 0.471  1.000
+Factor correlations with CLF:
+        CONFIRM VALUE SATISF TRUST INTENT
+CONFIRM   1.000 0.527  0.577 0.314  0.428
+VALUE     0.527 1.000  0.589 0.025  0.412
+SATISF    0.577 0.589  1.000 0.186  0.457
+TRUST     0.314 0.025  0.186 1.000  0.397
+INTENT    0.428 0.412  0.457 0.397  1.000
+   H             path beta_without p_without beta_CLF    p_CLF difference
+1 H1  VALUE ~ CONFIRM       0.5772  5.28e-13   0.5772 5.28e-13   8.57e-07
+2 H2 SATISF ~ CONFIRM       0.3987  1.10e-06   0.3987 1.10e-06   2.71e-06
+3 H3   SATISF ~ VALUE       0.4082  5.22e-07   0.4082 5.22e-07  -2.75e-06
+4 H4 INTENT ~ CONFIRM       0.0906  3.75e-01   0.0906 3.75e-01  -2.39e-06
+5 H5   INTENT ~ VALUE       0.2335  1.47e-02   0.2335 1.47e-02  -6.18e-07
+6 H6  INTENT ~ SATISF       0.2265  2.58e-02   0.2265 2.58e-02   1.25e-06
+7 H7   INTENT ~ TRUST       0.3372  8.34e-06   0.3372 8.34e-06   4.69e-07
+       lhs   est    se pvalue
+41     CLF 1.000 0.000     NA
+75 CONFIRM 0.480 0.076      0
+76   VALUE 0.377 0.061      0
+77  SATISF 0.249 0.041      0
+78   TRUST 0.512 0.081      0
+79  INTENT 0.250 0.046      0
+          chisq  df pvalue cfi   tli rmsea  srmr
+without 138.673 162  0.908   1 1.013     0 0.035
+CLF     138.673 161  0.898   1 1.012     0 0.035
+R2 without CLF: 0.333 0.514 0.443 
+R2 with CLF: 0.333 0.514 0.443 
+CLF loading m in the SEM: 0 
+
+Complete cases N = 254 
+                  chisq  df pvalue   cfi   tli rmsea  srmr
+1 factor        926.357 170  0.000 0.633 0.590 0.132 0.117
+5 factors       137.053 160  0.905 1.000 1.013 0.000 0.035
+5 factors + CLF 136.879 159  0.897 1.000 1.013 0.000 0.037
+
+Chi-Squared Difference Test
+
+     Df   AIC   BIC  Chisq Chisq diff   RMSEA Df diff Pr(>Chisq)    
+f5d 160 11924 12101 137.05                                          
+f1d 170 12693 12835 926.36      789.3 0.55391      10  < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Chi-Squared Difference Test
+
+     Df   AIC   BIC  Chisq Chisq diff RMSEA Df diff Pr(>Chisq)
+fcd 159 11926 12106 136.88                                    
+f5d 160 11924 12101 137.05     0.1747     0       1      0.676
+CLF standardized loadings (complete): 0.285 0.324  m = 0.2901  p = 0.0314 ; largest change in a loading: 0.092 ; mean % variance: 9.27 
+Path coefficients (complete) without/with CLF:
+      [,1]  [,2]  [,3]  [,4]
+[1,] 0.579 0.000 0.579 0.000
+[2,] 0.389 0.000 0.389 0.000
+[3,] 0.424 0.000 0.424 0.000
+[4,] 0.077 0.442 0.077 0.442
+[5,] 0.215 0.023 0.215 0.024
+[6,] 0.260 0.011 0.260 0.012
+[7,] 0.338 0.000 0.338 0.000
+          m mean_std_loading chisq_CFA chisq_SEM
+ [1,] 0.000            0.000   134.293   138.673
+ [2,] 0.025            0.026   134.291   138.677
+ [3,] 0.050            0.053   134.286   138.689
+ [4,] 0.075            0.079   134.277   138.709
+ [5,] 0.100            0.105   134.266   138.741
+ [6,] 0.125            0.132   134.252   138.787
+ [7,] 0.150            0.158   134.236   138.850
+ [8,] 0.175            0.185   134.220   138.937
+ [9,] 0.200            0.211   134.205   139.055
+[10,] 0.225            0.237   134.194   139.213
+[11,] 0.250            0.264   134.191   139.425
+[12,] 0.275            0.290   134.202   139.710
+[13,] 0.300            0.317   134.237   140.091
+[14,] 0.325            0.343   134.309   140.599
+[15,] 0.350            0.369   134.433   141.273
+[16,] 0.375            0.395   134.633   142.162
+[17,] 0.400            0.421   134.931   143.320
+[18,] 0.425            0.447   135.346   144.807
+[19,] 0.450            0.473   135.882   146.679
+[20,] 0.475            0.499   136.518   148.983
+[21,] 0.500            0.525   137.214   151.751

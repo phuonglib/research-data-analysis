@@ -1,0 +1,12 @@
+Complete cases for the control-variable models: 259
+Model 2 without controls, standardized coefficients:
+CONF    0.08488
+PV      0.20106
+SAT     0.21229
+TRU     0.29497
+R2 without controls = 0.3227, with controls = 0.3273, change = 0.0045
+F change(4, 250) = 0.422, p = 0.793
+Respondents with GENDER = Other among cases complete on CONF-RI and OCCUP: 4
+
+Gender moderator (n = 259): B(SAT_C x D_FEMALE) = 0.110, p = 0.266
+Age moderator (n = 262): B(SAT_C x AGE_C) = 0.0099, p = 0.073

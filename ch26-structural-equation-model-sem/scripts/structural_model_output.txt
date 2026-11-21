@@ -1,0 +1,56 @@
+This is lavaan 0.7-3
+lavaan is FREE software! Please report any bugs.
+    npar   chisq  df pvalue cfi   tli rmsea rmsea.ci.lower rmsea.ci.upper  srmr
+CFA   70 134.293 160  0.931   1 1.014     0              0          0.008 0.032
+SEM   68 138.673 162  0.908   1 1.013     0              0          0.012 0.035
+         aic      bic
+CFA 12507.25 12758.35
+SEM 12507.63 12751.56
+
+Chi-Squared Difference Test
+
+         Df   AIC   BIC  Chisq Chisq diff Df diff Pr(>Chisq)
+cfa_fit 160 12507 12758 134.29                              
+sem_fit 162 12508 12752 138.67       4.38       2     0.1119
+      lhs     rhs   est    se     z pvalue std.all
+21  VALUE CONFIRM 0.627 0.087 7.218  0.000   0.577
+22 SATISF CONFIRM 0.412 0.085 4.872  0.000   0.399
+23 SATISF   VALUE 0.389 0.077 5.018  0.000   0.408
+24 INTENT CONFIRM 0.088 0.099 0.887  0.375   0.091
+25 INTENT   VALUE 0.208 0.085 2.441  0.015   0.233
+26 INTENT  SATISF 0.212 0.095 2.229  0.026   0.227
+27 INTENT   TRUST 0.316 0.071 4.456  0.000   0.337
+ VALUE SATISF INTENT 
+ 0.333  0.514  0.443 
+     est pvalue std.all
+28 0.194      0   0.392
+Largest loading difference CFA - SEM: 0.0017 
+      lhs est.std
+50  VALUE   0.667
+51 SATISF   0.486
+53 INTENT   0.557
+     lhs est.std    se pvalue
+79 total   0.369 0.071      0
+        lhs op    rhs    mi sepc.all
+359   VALUE  ~ INTENT 2.563   -0.342
+360   VALUE  ~  TRUST 2.563   -0.115
+361  SATISF  ~ INTENT 1.629    0.243
+362  SATISF  ~  TRUST 1.629    0.082
+363 CONFIRM  ~  VALUE 2.563    0.373
+364 CONFIRM  ~ SATISF 0.178   -0.107
+365 CONFIRM  ~ INTENT 0.566    0.463
+367   TRUST  ~  VALUE 2.563   -0.146
+368   TRUST  ~ SATISF 0.178    0.042
+369   TRUST  ~ INTENT 0.566   -0.181
+
+Covariance CONFIRM-TRUST left out:
+  chisq      df     cfi   rmsea    srmr 
+168.991 163.000   0.997   0.012   0.084 
+
+Chi-Squared Difference Test
+
+           Df   AIC   BIC  Chisq Chisq diff Df diff Pr(>Chisq)    
+sem_fit   162 12508 12752 138.67                                  
+sem_nocov 163 12536 12776 168.99     30.319       1  3.666e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
